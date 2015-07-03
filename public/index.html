@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!doctype html>
+<html ng-app="appTest">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Master ASP Test</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="public/app.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS -->
+<body ng-controller="mainController">
+<div class="container">
+    <select ng-model="period">
+        <option value="1000">1 seg</option>
+        <option value="5000">5 seg</option>
+        <option value="10000">10 seg</option>
+        <option value="60000">1 min</option>
+        <option value="300000">5 min</option>
+    </select>
+<p>
+    {{messageRandom}}
+</p>
+
+</div>
+</body>
+</html>
